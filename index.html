@@ -1,0 +1,642 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+        <meta charset="utf-8">
+        <title>المحاضرة 25</title>
+    </head>
+    <body>
+<!-- nav //////////////////////////////////////////////////////////////////////////////////////// -->
+      <nav class="navbar navbar-expand-lg navbar-Dark fixed-top" style=" background-color: rgba(0, 0, 0, 0.8);">
+        <div class="container-fluid">
+          <img src="image/Mercury_in_color_-_Prockter07-edit1.jpg" alt="" height="40px" width="40px" >
+          <a class="navbar-brand mx-4" href="#">universe</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nave">
+              <li class="nav-item linke">
+                <a class="nav-link active linken" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item linke">
+                <a class="nav-link active px-4 linken" href="#">Blog</a>
+              </li>
+              <li class="nav-item dropdown linke">
+                <a class="nav-link dropdown-toggle active linken" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Perspective
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                  <li ><a class="dropdown-item " href="#">2D</a></li>
+                  <li><a class="dropdown-item" href="#">3D</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">180deg</a></li>
+                </ul>
+              </li>
+              <li class="nav-item linke">
+                <a class="nav-link active px-4 linken" href="#" tabindex="-1" aria-disabled="true">Subscribe $</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-1">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light mx-2" type="submit">Search</button>
+              <button class="btn btn-outline-light px-3" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">login</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<!-- model //////////////////////////////////////////////////////////////////////////////////////////// -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header  title-h2">
+              <h5 class="modal-title title1" id="exampleModalLabel">login</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">username :</label>
+                  <nav class="navbar navbar-light ">
+                    <form class="container-fluid">
+                      <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                    </form>
+                  </nav>
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">password :</label>
+                  <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-eye-slash"></i></span>
+                    <input type="password" class="form-control" id="basic-addon1" id="message-text" placeholder="Please enter at least 8 characters" >
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked">Remember me</label>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" style="margin-right: 320px;">login</button>
+              <button type="button" class="btn title-h2"   data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section 1 ////////////////////////////////////////////'/////////////////////////////// -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <ul class="nav flex-column mx-4">
+          <li class="nav-item">
+            <a class="nav-link active FS-3 card-info-title  mt-4 p-2" aria-current="page" href="#"><i class="fa-solid fa-envelope"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link FS-3 card-info-title  mt-4 p-2 " href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link FS-3 card-info-title  mt-4 p-2" href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link FS-3 card-info-title  mt-4 p-2" href="#" aria-disabled="true"><i class="fa-brands fa-x-twitter"></i></a>
+          </li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="overlay"></div>
+            <img src="image/Designer (8).jpeg"  class="d-block w-100" alt="..." style="height: 100vh;">
+            <div class="carousel-caption rounded-3  d-md-block">
+              <h5>The solar system</h5>
+              <p>It is a group of planets that revolve in orbits around the sun in the Milky Way Galaxy and were formed as a result of the Big Bang that occurred 10,000,000 years ago..</p>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Read more</button>
+            </div>
+          </div> 
+          <div class="carousel-item">
+            <img src="image/Designer (4).jpeg" class="d-block w-100" alt="..." style="height: 100vh;">
+            <div class="carousel-caption  d-md-block rounded-3">
+              <h5>the earth</h5>
+              <p>It is the third planet and life began on the planet because of the large meteorite that struck the Earth 66 million years ago, which led to the extinction of the dinosaurs and the beginning of the era of human evolution. It has one moon.</p>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Read more</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/Designer (5).jpeg" class="d-block w-100" alt="..." style="height: 100vh;">
+            <div class="carousel-caption rounded-3  d-md-block">
+              <h5>Mars</h5>
+              <p>It is the third planet, and there are studies that say that it formed with the Earth, and scientists are enthusiastically studying the habitability of Mars due to the presence of frozen water, the presence of gravity of 38%, and it has two moons.</p>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Read more</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+<!-- card //////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="shadow-lg mb-1 bg-body-tertiary rounded">
+      <div class="card-img">
+        <div class="card-body">
+          <h5 class="card-info-title ">Milky Way Galaxy</h5>
+          <p class="card-text text-light">The Milky Way is a distant spiral galaxy located at a distance of about 2.537 million light-years from Earth. It contains billions of stars. Scientists assume that it began with the formation of two large stars (super giants) that burn quickly after collapsing to form a blue multi-star star that breaks up to form many stars.</p>
+          <a href="#" class="btn btn-secondary">Read more</a>
+        </div>
+      </div>
+    </div>
+<!-- title ////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="shadow-lg mb-2 bg-body-tertiary rounded">
+      <div class="d-flex  title-h2 p-5 justify-content-center mt-2">
+        <h3 class="title1">Latest studies</h3>
+      </div>
+    </div>
+<!-- accordion /////////////////////////////////////////////////////////////////////////////////////////// -->
+      <div class="accordion accordion-flush " id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed name" type="button" data-bs-toggle="collapse" style="box-shadow: 0px 0px 1px 0px  rgba(0, 0, 0, 0.5) inset;" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Kepler-1649c
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">It is an exoplanet that was recently discovered in the Milky Way galaxy and they called it the <mark class="bg-warning"> (second Earth)</mark> because of its location in the area known as the <strong> "Golden Zone"</strong> where water can remain in its liquid state. It is about 301 light years away from Earth and takes 19.5 days to complete an orbit around its star. It receives 75% of the light from its star compared to what the Earth receives from the sun. This means that its temperature is close to the temperature of the Earth.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed name" type="button" data-bs-toggle="collapse" style="box-shadow: 0px 4px 8px 0px  rgba(0, 0, 0, 0.3) inset;" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        V838 Monocerotis
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">It is a star in the Milky Way galaxy that was discovered in 2002. This star is distinguished by its large explosion that made it cascade into the sky in a noticeable way to scientists. It was formed as a result of an observed stellar explosion and is considered one of the largest explosions. It is considered part of the double star system. It consists of a primary star and a secondary star<strong>"V838 Monocerotis"</strong>. The secondary star revolves around a common axis. The large explosion that occurred in 2002 was the result of changes in the secondary star, which led to the rise of gases and matter in the star. It is millions of years old.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed name" type="button" data-bs-toggle="collapse" style=" margin-top: -2px; box-shadow: 1px 4px 9px 0px  rgba(0, 0, 0, 0.3) inset;" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Black hole
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">It is a region in the universe that contains a very strong gravitational force such that light can enter it and matter cannot exit it. It is believed that a black hole is formed when large amounts of stars, gas and dust gather in one place, which leads to their collapse on themselves and the formation of a black hole. Scientists believe that behind the black hole is a white hole that crosses into parallel worlds and galaxies. They used space radio to detect the black hole. For example, they were able to photograph the black hole in 2019 using the Great Testament Observatory <strong>"M87"</strong> known as <strong>(EHT)</strong>.</div>
+    </div>
+  </div>
+</div>
+<!-- title //////////////////////////////////////////////////////////////////////////////////////////// -->
+     <div class="shadow-sm mb-2 bg-body-tertiary rounded">
+      <div class="d-flex  title-h2 p-4 justify-content-center mt-2">
+        <h3 class="title1">Kepler-1649c</h3>
+      </div>
+    </div>
+<!-- Kepler-1649c ////////////////////////////////////////////////////////////////////////////////////////// -->
+    <span class="fs-6 ms-5 mt-4" style="display: inline-block;">Write your opinion and studies about</span>
+    <span class="fs-5 text-warning mt-4" style="display: inline-block;">Kepler-1649c</span>
+<!-- textarea ////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="input-group">
+      <textarea class="form-control mx-5 my-3" aria-label="With textarea" rows="5" placeholder="Please enter your opinions :" ></textarea>
+    </div>
+<!-- send -->
+    <button type="button" class="btn-secondary ms-5 d-block rounded px-3 py-1" style="border: none;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  data-toggle="tooltip" data-placement="top mt-5" title="send!!"data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
+      send
+    </button>
+<!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h1 class="modal-title fs-5 " id="staticBackdropLabel">Dear visitor</h1>
+            <p class="py-1">Your opinion has been sent and will be considered. Thank you.</p>
+            <button type="button" class="btn title-h2 pt-1"  data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <!--V838 Monocerotis title //////////////////////////////////////////////////////////////////////////////////////////// -->
+     <div class="shadow-sm mb-2 bg-body-tertiary rounded">
+      <div class="d-flex  title-h2 p-4 justify-content-center mt-5 my-4">
+        <h3 class="title1">V838 Monocerotis</h3>
+      </div>
+    </div>
+<!-- V838 Monocerotis ////////////////////////////////////////////////////////////////////////////////////////// -->
+    <span class="fs-6 ms-5">Write your opinion and studies about</span>
+    <span class="fs-5 text-warning">V838 Monocerotis</span>
+<!-- textarea ////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="input-group">
+      <textarea class="form-control mx-5 my-3" aria-label="With textarea" rows="5" placeholder="Please enter your opinions :" ></textarea>
+    </div>
+<!-- send -->
+    <button type="button" class="btn-secondary ms-5 d-block rounded px-3 py-1" style="border: none;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  data-placement="top mt-5" title="send!!" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
+      send
+    </button>
+<!-- Black hole /////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+ <!-- title //////////////////////////////////////////////////////////////////////////////////////////// -->
+     <div class="shadow-sm mb-2 bg-body-tertiary rounded">
+      <div class="d-flex  title-h2 p-4 justify-content-center mt-5 my-4">
+        <h3 class="title1">Black hole</h3>
+      </div>
+    </div>
+<!-- Black hole ////////////////////////////////////////////////////////////////////////////////////////// -->
+    <span class="fs-6 ms-5">Write your opinion and studies about</span>
+    <span class="fs-5 text-warning">Black hole</span>
+<!-- textarea ////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="input-group">
+      <textarea class="form-control mx-5 my-3" aria-label="With textarea" rows="5" placeholder="Please enter your opinions :" ></textarea>
+    </div>
+<!-- send -->
+    <button type="button" class="btn-secondary ms-5 d-block rounded px-3 py-1" style="border: none;" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-toggle="tooltip" data-placement="top mt-5" title="send!!"data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
+      send
+    </button>
+<!-- image ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="image mt-5 rounded-2 shadow-lg"></div>
+<!-- title////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="shadow-sm mb-2 bg-body-tertiary rounded">
+      <div class="d-flex  title-h2 p-4 justify-content-center mt-2">
+        <h3 class="title1">Planets</h3>
+      </div>
+    </div>
+<!-- 8divs //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="card-background mt-5" style="background-color: beige;">
+    <div class="container-fluid ">
+      <div class="row justify-content-around">
+        <div class="col-12 col-sm-6-w col-md-12 col-lg-3">
+          <div class="card card2 w-100 shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 320px;">
+            <img class="rounded" src="image/DALL·E 2024-11-08 18.21.47 - A realistic image of the planet Mercury in space, showing its cratered surface with a mix of rocky, grey, and brown tones. Mercury appears barren, wit (1).webp" class="card-img-top" alt="Mercury">
+            <div class="card-body text-center">
+              <h5 class="card-title-info">Mercury</h5>
+              <p class="card-text">The first planet needs 88 days to complete one orbit around the sun and 59 days to complete one orbit around itself, and its surface temperature is high.</p>
+              <a href="#" class="btn btn-color">Perspective view</a>
+            </div>
+          </div>
+        </div>
+<!-- div2///////////////////////////////////////////////////// -->
+        <div class="col-12 col-sm-6 col-md-12 col-lg-3">
+          <div class="card card2 w-100 shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 320px;">
+            <img class="rounded" src="image/DALL·E 2024-11-08 18.49.15 - A realistic image of the planet Venus in outer space, similar to a previous image of Mercury. Venus appears as a rocky, slightly yellowish planet with.webp" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title-info">Venus</h5>
+              <p class="card-text">The second planet needs 225 days to complete one orbit around the sun and 243 days to complete one orbit around itself, and its surface temperature is 465.</p>
+              <a href="#" class="btn btn-color">Perspective view</a>
+            </div>
+          </div>
+        </div>
+<!-- div3/////////////////////////////////////////////////////// -->
+        <div class="col-12 col-sm-6 col-md-12 col-lg-3">
+          <div class="card card2 w-100 shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 320px;">
+            <img class="rounded" src="image/file-ED9Dsy30w84vC7NX0QFqOJni.webp" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title-info">Earth</h5>
+              <p class="card-text">The third planet needs 365 days to complete one orbit around the sun and 24 hours to complete one orbit around itself, and its surface temperature is moderate.</p>
+              <a href="#" class="btn btn-color">Perspective view</a>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- row2 //////////////////////////////////////////////////////////// -->
+       <div class="row justify-content-around mt-3">
+        <div class="col-12 col-sm-6 col-md-12 col-lg-3">
+          <div class="card card2 w-100 shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 320px;">
+            <img class="rounded" src="image/file-FdE5mDR2jS03yQpwAJjhu6AJ.webp" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title-info">Mars</h5>
+              <p class="card-text">The fourth planet needs 687 days to complete one orbit around the sun and 24.6 hours to complete one orbit around itself, and its surface temperature is -125.</p>
+              <a href="#" class="btn btn-color">Perspective view</a>
+            </div>
+          </div>
+        </div>
+<!-- div2///////////////////////////////////////////////////// -->
+        <div class="col-12 col-sm-6 col-md-12 col-lg-3">
+          <div class="card card2 w-100 shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 320px;">
+            <img class="rounded" src="image/file-FhxVnaCoig5PnWi7W9b43hI5.webp" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title-info">Jupiter</h5>
+              <p class="card-text">The fifth planet needs 12 years to complete one orbit around the sun and 10 hours to complete one orbit around itself, and its surface temperature is -145.</p>
+              <a href="#" class="btn btn-color">Perspective view</a>
+            </div>
+          </div>
+        </div>
+<!-- div3/////////////////////////////////////////////////////// -->
+        <div class="col-12 col-sm-6 col-md-12 col-lg-3">
+          <div class="card card2 w-100 shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 320px;">
+            <img class="rounded" src="image/file-J76sTGI9KrtOwvlIrU6RZdXy_1.webp" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title-info">Saturn</h5>
+              <p class="card-text">The sixth planet needs 29.5 years to complete one orbit around the sun and 10.7 hours to complete one orbit around itself, and its surface temperature is -178.</p>
+              <a href="#" class="btn btn-color">Perspective view</a>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- row3 //////////////////////////////////////////////////////////// -->
+       <div class="row justify-content-around mt-3">
+        <div class="col-12 col-sm-6 col-md-12 col-lg-3">
+          <div class="card card2 w-100 shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 320px;">
+            <img class="rounded" src="image/file-x0qDdGCBp1fx7CFVMCCtHT5N.webp" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title-info">Uranus</h5>
+              <p class="card-text">The seventh planet needs 84 years to complete one orbit around the sun and 17.2 hours to complete one orbit around itself, and its surface temperature is -224</p>
+              <a href="#" class="btn btn-color">Perspective view</a>
+            </div>
+          </div>
+        </div>
+<!-- div2///////////////////////////////////////////////////// -->
+        <div class="col-12 col-sm-6 col-md-12 col-lg-3">
+          <div class="card card2 w-100 shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 320px;">
+            <img class="rounded" src="image/file-xQiO6dePpXnmS4cmfmLXaOAY (3).webp" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title-info">Neptune</h5>
+              <p class="card-text">The eighth planet needs 165 years to complete one orbit around the sun and 16.1 hours to complete one orbit around itself, and its surface temperature is -214.</p>
+              <a href="#" class="btn btn-color">Perspective view</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- image/////////////////////////////////////////////////////// -->
+  <div class="image2 mt-5 rounded-2 shadow-lg"></div>
+ <!-- title //////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="shadow-sm mb-2 bg-body-tertiary rounded">
+      <div class="d-flex  title-h2 p-4 justify-content-center mt-2 my-4">
+        <h3 class="title1">Space agencies</h3>
+      </div>
+    </div>
+<!-- ////////////////////////////////////////////////////////////////////////////// -->
+<div class="container">
+  <div class="row justify-content-between ">
+    <div class="col-12 col-sm-6-w col-md-12 col-lg-3 mt-3">
+      <div class="card card3 w-100 shadow mb-5 bg-body-tertiary rounded" style="width: 320px;">
+        <div class="img1">
+          <div class="img-overlay"></div>
+        </div>
+        <div class="card-img-overlay">
+          <img class="rounded-circle " src="image/9d8a72ab-01b5-45ef-a01a-a348fb8c8cef.png" alt="" width="90px" height="130">
+          <div class="info ms-2 text-light" style="margin-top: -340px;">
+            <h4 class="card-info-title">NASA</h4>
+            <p class="card-text" style="margin-top: -8px;">Her studies include Mars.</p>
+            <p class="card-text" style="margin-top: -16px; opacity: 0.8;"><small><i class="fa-regular fa-clock"></i> July 29,1958</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- div2///////////////////////////////////////////////////// -->
+    <div class="col-12 col-sm-6 col-md-12 col-lg-3 mt-3">
+      <div class="card card3 w-100 shadow  mb-5 bg-body-tertiary" style="width: 320px;">
+        <div class="img2">
+          <div class="img-overlay"></div>
+        </div>
+        <div class="card-img-overlay">
+          <img class="rounded-circle" src="image/392ff5e6-d6b4-41a0-b6f4-b5305bf3a5e1.png" alt="" width="90px" height="130">
+          <div class="info ms-2 text-light" style="margin-top: -340px;">
+            <h4 class="card-info-title">CNSA</h4>
+            <p class="card-text" style="margin-top: -8px;">Focus on lunar exploration</p>
+            <p class="card-text" style="margin-top: -16px; opacity: 0.8;"><small><i class="fa-regular fa-clock"></i> April 22,1993</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- div3/////////////////////////////////////////////////////// -->
+    <div class="col-12 col-sm-6 col-md-12 col-lg-3 mt-3">
+      <div class=" card card3 w-100 shadow mb-5 bg-body-tertiary rounded" style="width: 320px; ">
+       <div class="img3">
+        <div class="img-overlay"></div>
+       </div>
+        <div class="card-img-overlay">
+          <img class="rounded-circle" src="image/323839ce-9d25-497f-8413-eaaff58383e9.png" alt="" width="90px" height="130">
+          <div class="info ms-2 text-light" style="margin-top: -340px;">
+            <h4 class="card-info-title">ESA</h4>
+            <p class="card-text" style="margin-top: -8px;">Focus on studying other planets.</p>
+            <p class="card-text" style="margin-top: -16px; opacity: 0.8;"><small><i class="fa-regular fa-clock"></i> May 30,1975</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- title -->
+    <div class="container">
+      <h3 class="text-center title1 mt-5 ">Space phenomena</h3>
+      <div class="card mb-3 w-auto shadow-lg  mb-1 bg-body-tertiary rounded-3"  style=" background-color: beige; border: 0;">
+        <div class="row g-0 ">
+          <div class="col-md-8 d-inline-block order-2 order-md-1 order-sm-2">
+            <div class="card-body mt-1">
+              <h5 class="card-title-info2">METEORITE</h5>
+              <p class="card-text text-secondary" style="font-size: 11;"><i class="fa-solid fa-calendar"></i>Tuesday&nbsp; , October 14 1969</p>
+              <hr class="rounded-3" style=" border: 3px solid rgb(219, 0, 0); width: 90px;">
+              <p class="card-text"><small class="text-body-secondary">Meteorites are space objects made of minerals and rocks that come from outer space and enter the Earth's atmosphere.They provide valuable information about the history of the formation of the solar system, which led scientists to discoverhow the planets formed. Meteorites range in size from small grains to giant rocks. One of the most famous meteorites is the Chelyabinsk meteor, which entered the Earth's atmosphere on February 15, 2013, and fell over Russia, causing severe damage.</small></p>
+              <a href="#" class="btn color-btn p-1 text-light btn-opacity"><span style="font-size: 12;">Forum Discussions</span></a>
+              <a href="#" class="btn color-btn p-1 text-light"><span style="font-size: 12;">Read more</span></a>
+              <a href="#" class="btn color-btn p-1 text-light bg-color2"><span style="font-size: 12;">Perspective view <i class="fa-solid fa-eye"></i></span></a> </div>
+            </div>
+          <div class="order-sm-1 cv1 order-1 col-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="cv2" style="direction: rtl; ">
+              <img src="image/file-LnsWVq6FGn8hc0fvu05cLQzt.webp " class="img-fluid rounded-start rounded-3 w-100"  alt="..." style="height: 280px; width: 340px;">
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- div2//////////////////////////////////////////////////////////////////////////////// -->
+       <div class="card mb-3 w-auto shadow-lg  mb-1 bg-body-tertiary rounded-3" style=" background-color: beige; border: 0;">
+        <div class="row g-0 ">
+          <div class="order-sm-1 cv1 order-1 col-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="cv3" style="direction: rtl; ">
+              <img src="image/file-fCs3KS69EKIzxlttgohHT3Wo.webp" class="img-fluid rounded-start rounded-3 w-100"  alt="..." style="height: 280px; width: 340px;">
+            </div>
+          </div>
+          <div class="col-md-8 d-inline-block order-2 order-md-1 order-sm-2 ">
+            <div class="card-body mt-1">
+              <h5 class="card-title-info2">SINNER</h5>
+              <p class="card-text" style="font-size: 11;"><i class="fa-solid fa-calendar"></i>Wednesday&nbsp; , October 25 1967</p>
+              <hr class="rounded-3" style=" border: 3px solid hsl(253, 80%, 61%); width: 90px;">
+              <p class="card-text"><small class="text-body-secondary">They are icy and rocky bodies that orbit the sun in long, elliptical orbits. The ice evaporates when the comet approaches the sun. There are 3 types of comets: Short-period comets: orbit in short orbits of 200 years, such as Halley's Comet. Long-period comets: require thousands of years to complete an orbit around the sun. Comets affect the planets they approach, changing the composition of the atmosphere or even introducing new water and salts. It is believed that they may have brought water and organic compounds to Earth.</small></p>
+              <a href="#" class="btn color-btn2 p-1 text-light"><span style="font-size: 12;">Forum Discussions</span></a>
+              <a href="#" class="btn color-btn2 p-1 text-light"><span style="font-size: 12;">Read more</span></a>
+              <a href="#" class="btn color-btn2 p-1 color-bg text-light"><span style="font-size: 12;">Perspective view <i class="fa-solid fa-eye"></i></span></a>
+          </div>
+        </div>
+      </div>
+     </div> 
+<!-- div3/////////////////////////////////////////////////////////////////////////////////////// -->
+      <div class="card mb-3 w-auto shadow-lg  mb-1 bg-body-tertiary rounded-3"style=" background-color: beige; border: 0;" >
+        <div class="row g-0 ">
+          <div class="col-md-8 d-inline-block order-2 order-md-1 order-sm-2 ">
+            <div class="card-body mt-1">
+                <h5 class="card-title-info2">METEOR</h5>
+                <p class="card-text text-secondary" style="font-size: 11;"><i class="fa-solid fa-calendar"></i>Saturday&nbsp; , November 12 1833</p>
+                <hr class="rounded-3" style=" border: 3px solid rgb(219, 0, 0); width: 90px;">
+                <p class="card-text"><small class="text-body-secondary">They are small particles of rocks or minerals that move in space and sometimes enter the Earth's atmosphere. They come from the remains of asteroids and comets and their sizes range from a small grain of sand to a small piece. When a meteor enters the atmosphere at high speeds, friction occurs between them and air molecules, which leads to their ignition.A meteor shower occurs when the Earth passes through the path of the comet's remains. Meteors can be a source of organic compounds and water that helped form life.</small></p>
+              <a href="#" class="btn color-btn p-1 text-light btn-opacity"><span style="font-size: 12;">Forum Discussions</span></a>
+              <a href="#" class="btn color-btn p-1 text-light"><span style="font-size: 12;">Read more</span></a>
+              <a href="#" class="btn color-btn p-1 text-light bg-color2"><span style="font-size: 12;">Perspective view <i class="fa-solid fa-eye"></i></span></a> </div>
+          </div>
+          <div class="order-sm-1 cv1 order-1 col-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="cv2" style="direction: rtl; ">
+              <img src="image/file-zyu1hNp3Ip34z6ybvyiTelVZ.webp" class="img-fluid rounded-start rounded-3 w-100"  alt="..." style="height: 280px; width: 340px;">
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- div4////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <div class="card mb-3 w-auto shadow-lg  mb-1 bg-body-tertiary rounded-3" style=" background-color: beige; border: 0;">
+        <div class="row g-0 ">
+          <div class="order-sm-1 cv1 order-1 col-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="cv3" style="direction: rtl; ">
+              <img src="image/file-cORx9mSvG7w3Bp0Ts5iqpYLc.webp" class="img-fluid rounded-start rounded-3 w-100"  alt="..." style="height: 280px; width: 340px;">
+            </div>
+          </div>
+          <div class="col-md-8 d-inline-block order-2 order-md-1 order-sm-2 ">
+            <div class="card-body mt-1">
+              <h5 class="card-title-info2">Aurora Borealis</h5>
+              <p class="card-text" style="font-size: 11;"><i class="fa-solid fa-calendar"></i>Tuesday&nbsp; , May 20 1963</p>
+              <hr class="rounded-3" style=" border: 3px solid hsl(253, 80%, 61%); width: 90px;">
+              <p class="card-text"><small class="text-body-secondary">Known as the Northern and Southern Lights, it is one of the most amazing natural phenomena. It occurs as a result of the interaction of charged particles coming from the sun with the atmosphere. It occurs at the poles and places close to them during the winter months during high solar activity. It is not a continuous phenomenon, but rather occurs in varying cycles according to solar activity, accompanied by faint sounds that are rarely heard. The colors we see depend on the type of interacting molecules.</small></p>
+              <a href="#" class="btn color-btn2 p-1 text-light"><span style="font-size: 12;">Forum Discussions</span></a>
+              <a href="#" class="btn color-btn2 p-1 text-light"><span style="font-size: 12;">Read more</span></a>
+              <a href="#" class="btn color-btn2 p-1 color-bg text-light"><span style="font-size: 12;">Perspective view <i class="fa-solid fa-eye"></i></span></a>
+          </div>
+        </div>
+      </div>
+     </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    
+
+<!-- ////////////////////////////////////////////////////////////////////////////////// -->
+    <h3 class="text-center title1 mt-5">Join us</h3>
+    <div class="container">
+      <div class="row justify-content-between mt-3">
+        <div class="col-12 col-sm-6 col-md-12 col-lg-3" >
+          <div class="card w-100 shadow p-0 mb-5 bg-body-tertiary rounded">
+            <h5 class="card-title-info text-center pt-3">Facebook</h5>
+          <div class="card-body text-center">
+            <img class=" mb-3 rounded-3 shadow bg-body-tertiary rounded" src="image/file-Y1Aj2X4q5WhKICEQhWq2Yca9.webp" width="99px" class="card-img-top" alt="...">
+            <a href="#" class="btn p-0 text-primary d-block pb-2">Contact us</a>
+          </div>
+          </div>
+        </div>
+<!-- div2///////////////////////////////////////////////////// -->
+        <div class="col-12 col-sm-6 col-md-12 col-lg-3">
+          <div class="card w-100 shadow p-0 mb-5 bg-body-tertiary rounded ">
+            <h5 class="card-title-info text-center pt-3">Instagram</h5>
+            <div class="card-body text-center">
+              <img class=" mb-3 rounded-3 shadow bg-body-tertiary rounded" src="image/file-6fleccE8FbhJui5z12pj838s.webp" width="99px" class="card-img-top" alt="...">
+              <a href="#" class="btn p-0 text-primary d-block pb-2">Contact us</a>
+            </div>
+          </div>
+        </div>
+<!-- div3/////////////////////////////////////////////////////// -->
+        <div class="col-12 col-sm-6 col-md-12 col-lg-3">
+          <div class="card w-100 shadow mb-5 bg-body-tertiary rounded " >
+            <h5 class="card-title-info p-0 text-center pt-3">Twitter</h5>
+            <div class="card-body text-center">
+              <img class=" mb-3 rounded-3 shadow bg-body-tertiary rounded" src="image/file-p2I9oVDwz8XGZeRrjdUqi8D9.webp" width="99px" class="card-img-top" alt="...">
+              <a href="#" class="btn p-0 text-primary d-block pb-2">Contact us</a>
+            </div>
+          </div>
+        </div>
+<!-- div4///////////////////////////////////////////////////// -->
+        <div class="col-12 col-sm-6 col-md-12  col-lg-3">
+          <div class="card w-100 shadow p-0 mb-5 bg-body-tertiary rounded " >
+            <h5 class="card-title-info text-center pt-3">Telegram</h5>
+            <div class="card-body text-center">
+              <img class=" mb-3 rounded-3 shadow bg-body-tertiary rounded" src="image/file-j2btbHF3WDV3WdnO3KaSwY83.webp" width="99px" class="card-img-top" alt="...">
+              <a href="#" class="btn p-0 text-primary d-block pb-2">Contact us</a>
+            </div>
+          </div>
+        </div>
+       </div>
+     </div>  
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+    <div class="background mt-2 title-h2 h-auto">
+      <h3 class="text-center title1 pt-3">What we offer</h3>
+        <div class="row justify-content-between mt-3 m-0">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+            <div class="border border-top-light mt-4 w-250" style=" margin-left: -25%;"></div>
+            <div class="card-2 w-100 mt-2 text-center">
+              <img class=" mt-1 rounded-circle" src="image/Mercury_in_color_-_Prockter07-edit1.jpg" width="70px" class="card-img-top" alt="Mercury" >
+              <span class=" text-center fs-6">Latest discoveries</span>
+              <div class="border border-top-light mt-3 w-250" style=" margin-left: -25%;"></div>
+              <div class="card-body text-center">
+                <p>V838 Monocerotis</p>
+                <p>Kepler-1649c</p>
+                <p>Black hole</p>
+              </div>
+            </div>
+          </div>
+  <!-- div2///////////////////////////////////////////////////// -->
+          <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+            <div class="border border-top-light mt-4 w-250" style=" margin-left: -20%;"></div>
+            <div class="card-2 w-100 mt-2 text-center">
+              <img class=" mt-1 rounded-circle" src="image/Mercury_in_color_-_Prockter07-edit1.jpg" width="70px" class="card-img-top" alt="Mercury" >
+              <span class=" text-center fs-6">Research source</span>
+              <div class="border border-top-light mt-3 w-250" style=" margin-left: -20%;"></div>
+              <div class="card-body text-center">
+                <p>NASA</p>
+                <p>CNSA</p>
+                <p>ESA</p>
+              </div>
+            </div>
+          </div>
+  <!-- div3/////////////////////////////////////////////////////// -->
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 p-0 m-0">
+            <div class="border border-top-light mt-4 w-250 " style="margin-left: -11%;"></div>
+            <div class="card-2 w-100 mt-2 text-center">
+              <img class=" mt-1 rounded-circle" src="image/Mercury_in_color_-_Prockter07-edit1.jpg" width="70px" class="card-img-top" alt="Mercury" >
+              <span class=" text-center fs-6">Our location</span>
+              <div class="border border-top-light mt-3 w-250 " style=" margin-left: -11%; "></div>
+              <div class="card-body text-center ">
+                <p>Syria</p>
+                <p>LATAKIA , Next to Sweid Hospital</p>
+                <p>0994644153</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="spacing ">
+          <div class="border border-top-light mb-4 w-auto "></div>
+          <h5 class="title1 text-center">COPYRIGHT &COPY; 2023 SPACE TREASURES YOUR PLACE TO LEARN BATTER</h5>
+          <div class="border border-top-light w-auto mt-4"> </div>
+        </div>
+        
+    </div>
+    <div class="title-h2 w-auto" style="height: 50px;"></div>
+    
+    
+
+
+
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+</html>

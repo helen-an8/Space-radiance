@@ -1,0 +1,179 @@
+.form-check{
+    margin-left: 18px;
+    margin-bottom: 16px;
+}
+.carousel-caption{
+    background-color: rgba(0,0,0,0.7);
+    padding: 30px;
+}
+.nav{
+    position: absolute;
+    z-index: 2;
+    margin-top: 175px;
+}
+.nav a{
+    width: 45px;
+    height: 45px;
+}
+.linke{
+    transition: 1s;
+}
+.linke:hover .linken {
+    background: linear-gradient(180deg , #f1f1f1 , rgb(78, 180, 248));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s;
+}
+.card-img{
+    background-image: url(../image/1ffdadd7-065d-4b95-98f5-6b0f88d5ff7e.png);
+}
+.card-title3 , .title1 {
+    background: linear-gradient(180deg , #fd05d4 , rgb(4, 150, 248));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.image{
+   background-image: url(../image/Designer.jpeg); 
+}
+.image2{
+    background-image: url(../image/file-HUI3o77SCT87eC0kl1hUaEAk.webp);
+}
+.title1{
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.image , .image2{ 
+    background-size:cover ;
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.card-title-info{
+    background: linear-gradient(180deg ,hsla(59, 99%, 49%, 0.918) ,hsla(357, 97%, 38%, 0.795));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.name{
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.card2{
+    position: relative;
+}
+.card2::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 1s;
+}
+.card2:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.card2::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 1s;
+}
+.card2:hover::before{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.btn-color{
+    border: 0;
+    background: -webkit-linear-gradient(left , hsla(59, 95%, 40%, 0.925),hsla(357, 97%, 38%, 0.884));
+
+}
+.rounded-circle{
+    margin-top: 210px;
+}
+.img3{
+    background-image: url(../image/7d18768b-e909-4003-acf0-8cd680ac9f17.png);
+}
+.img-overlay{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+.img2{
+    background-image: url(../image/f0ba48d2-7812-4600-88dc-2476044e029f.png );
+}
+.img1{
+    background-image: url(../image/cac3553d-e2c3-41b5-b003-078e1274325c.png);
+}
+.img1 , .img2 , .img3{
+    height: 380px;
+    background-size: cover;
+}
+.card-info-title{
+    background: linear-gradient(180deg ,hsla(172, 99%, 49%, 0.918) ,hsla(284, 88%, 76%, 0.795));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card3{
+    transition: 1s;
+}
+.card3:hover{
+    transform: scale(0.9);
+}
+.card-title-info2{
+    background: linear-gradient(180deg ,hsla(17, 94%, 49%, 0.87),hsla(268, 99%, 49%, 0.767) );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.title-h2{
+    background-color: rgba(179, 178, 178, 0.74);
+}
+.color-btn{
+    background-color: rgb(209, 104, 104);
+}
+.color-btn:hover , .color-btn2:hover{
+    opacity: 0.9;
+}
+.color-btn2{
+    background-color: hsl(253, 80%, 61%);
+}
+.color-bg:hover{
+    background-color: rgb(209, 104, 104);
+}
+.bg-color2:hover{
+  background-color: hsl(253, 80%, 61%);
+}
+.cv2{
+  clip-path: polygon(11% 0, 100% 0%, 100% 100%, 23% 100%);
+}
+.cv3{
+    clip-path: polygon(0 0, 90% 0, 77% 100%, 0 100%);
+}
+@media (max-width : 576px){
+  .cv2{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .cv3{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .cv1{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
